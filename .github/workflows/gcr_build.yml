@@ -22,4 +22,4 @@ jobs:
         gcloud auth configure-docker -q
      - name: image push
        run: |-
-        docker push us.gcr.io/$PROJECT_ID/newapp:latest
+        docker push us.gcr.io/${{ secrets.PROJECT_ID }}/newapp:latest
